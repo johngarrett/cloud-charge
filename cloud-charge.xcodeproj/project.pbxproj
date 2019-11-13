@@ -13,6 +13,8 @@
 		93AEA8F5237BA4CE0000CF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AEA8F3237BA4CE0000CF03 /* Main.storyboard */; };
 		93AEA8F7237BA4D10000CF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AEA8F6237BA4D10000CF03 /* Assets.xcassets */; };
 		93AEA8FA237BA4D10000CF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AEA8F8237BA4D10000CF03 /* LaunchScreen.storyboard */; };
+		93AEA903237BA5D10000CF03 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AEA902237BA5D10000CF03 /* CoreBluetooth.framework */; };
+		93AEA905237BAE1B0000CF03 /* cloud-charge+CBUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEA904237BAE1B0000CF03 /* cloud-charge+CBUUID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		93AEA8F6237BA4D10000CF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AEA8F9237BA4D10000CF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93AEA8FB237BA4D10000CF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AEA902237BA5D10000CF03 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		93AEA904237BAE1B0000CF03 /* cloud-charge+CBUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "cloud-charge+CBUUID.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AEA903237BA5D10000CF03 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +45,10 @@
 		93AEA8E1237BA4CE0000CF03 = {
 			isa = PBXGroup;
 			children = (
+				93AEA904237BAE1B0000CF03 /* cloud-charge+CBUUID.swift */,
 				93AEA8EC237BA4CE0000CF03 /* cloud-charge */,
 				93AEA8EB237BA4CE0000CF03 /* Products */,
+				93AEA901237BA5D10000CF03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +72,14 @@
 				93AEA8FB237BA4D10000CF03 /* Info.plist */,
 			);
 			path = "cloud-charge";
+			sourceTree = "<group>";
+		};
+		93AEA901237BA5D10000CF03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93AEA902237BA5D10000CF03 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93AEA8F2237BA4CE0000CF03 /* ViewController.swift in Sources */,
+				93AEA905237BAE1B0000CF03 /* cloud-charge+CBUUID.swift in Sources */,
 				93AEA8EE237BA4CE0000CF03 /* AppDelegate.swift in Sources */,
 				93AEA8F0237BA4CE0000CF03 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,7 +301,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S68HPQEB8L;
 				INFOPLIST_FILE = "cloud-charge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +320,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S68HPQEB8L;
 				INFOPLIST_FILE = "cloud-charge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
